@@ -1,0 +1,8 @@
+From openjdk:alpine
+
+
+WORKDIR '/app'
+
+COPY fitnesse-standalone.jar /app
+
+CMD ["java", "-jar", "fitnesse-standalone.jar"]
